@@ -1,0 +1,73 @@
+{
+	"skipTerminateQuickPick": true,
+	"skipSwitchToOutput": false,
+	"skipErrorMessage": true,
+	"commands": [
+    {
+			"text": "npm start",
+			"tooltip": "npm start",
+			"color": "yellow",
+			"command": "npm start",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 2
+    },
+    {
+			"text": "npm stop",
+			"tooltip": "npm stop",
+			"color": "yellow",
+			"command": "easy kill",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 2
+    },
+    {
+			"text": "npm start test",
+			"tooltip": "npm start test mode",
+			"color": "yellow",
+			"command": "npm run build:test && npm run start:test",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		},
+		{
+			"text": "npm test",
+			"tooltip": "npm run test",
+			"color": "yellow",
+			"command": "npm run test",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		},
+		{
+			"text": "all test",
+			"tooltip": "mocha.runAllTests",
+			"color": "yellow",
+			"commandType": "palette",
+			"command": "mocha.runAllTests",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		},
+		{
+			"text": "select test",
+			"tooltip": "mocha.selectAndRunTest",
+			"color": "yellow",
+			"commandType": "palette",
+			"command": "mocha.selectAndRunTest",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		},
+		{
+			"text": "failed test",
+			"tooltip": "mocha.runFailedTests",
+			"color": "yellow",
+			"commandType": "palette",
+			"command": "mocha.runFailedTests",
+			"alignment": "left",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		}
+	]
+}
